@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="8dp">
+
+    <!-- Search View -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:queryHint="Search products"
+        android:background="@drawable/rounded_searchview_background"
+        android:iconifiedByDefault="false"
+        android:padding="8dp" />
+
+    <!-- No Products Text -->
+    <TextView
+        android:id="@+id/noProductText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No products available"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FF5252"
+        android:textStyle="bold"
+        android:layout_below="@id/searchView"
+        android:layout_margin="16dp" />
+
+    <!-- Product ListView -->
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#B2EBF2"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/noProductText"
+        android:layout_above="@+id/insertProductButton"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:background="#FFFFFF" />
+
+    <!-- Insert Product Button -->
+    <Button
+        android:id="@+id/insertProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Products"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#4CAF50"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+</RelativeLayout>
