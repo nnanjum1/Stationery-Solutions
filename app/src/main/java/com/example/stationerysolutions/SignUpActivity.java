@@ -158,18 +158,5 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
-    // Send email verification
-//    private void sendEmailVerification(FirebaseUser user) {
-//        user.sendEmailVerification()
-//                .addOnCompleteListener(this, task -> {
-//                    if (task.isSuccessful()) {
-//                        Toast.makeText(SignUpActivity.this, "Verification email sent to " + user.getEmail(), Toast.LENGTH_SHORT).show();
-//                        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-//                        startActivity(intent);
-//                        finish();
-//                    } else {
-//                        Toast.makeText(SignUpActivity.this, "Failed to send verification email", Toast.LENGTH_LONG).show();
-//                    }
-//                });
-//    }
+
 }
